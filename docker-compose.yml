@@ -5,7 +5,8 @@ services:
     build: .
     #image: "mariosantana287ti/myfirstapp:2.0"
     environment:
-        - MESSAGE="Usando Variavel de Ambiente, para mudar a msg - Mario Santana"        
+        - MESSAGE="Usando Variavel de Ambiente, para mudar a msg - Mario Santana" 
+        - REDIS_HOST="redis"       
     networks:
       labdocker:
         ipv4_address: 172.20.0.2
